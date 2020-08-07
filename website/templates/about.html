@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JEDAR Scientific Instruments Services</title>
+
+	<link rel="shortcut icon" href=" {% static 'website/img/Logo2.png' %}">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+	<div id="navigation-sticky">
+
+		<!-- Navigation -->
+		<nav class="navbar bg-light navbar-light navbar-expand-lg sticky-top">
+			<div class="container">
+				<a href="index.html" class="navbar-brand"><img src="{% static 'website/img/Logo1.png '%}" alt="Logo" title="Logo">JEDAR</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active">Services</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Team</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Contact Us</a></li>
+				</ul>
+			</div>
+
+			</div>
+		</nav>
+
+<h1 class="text-center">SERVICES</h1>
+		<footer class="bg-dark-footer">
+		<div class="container">
+			<h1 class="text-center" style="color: white;"> Contact Us </h1>
+			<p style="text-align: center; color: whitesmoke;">Any Questions? Fill out this form to contact us and you’ll hear back within 24 hours.</p>
+			<div class="border-top border-white w-100 mx-auto my-3"></div>
+			<div class="row">
+				<div class="col-md-6">
+				<form action="{% url 'home' %}" method="POST"><br>
+					{% csrf_token %}
+					<input type="Text" name="message-name"	required="" placeholder="Your Name" class="form-control"><br>
+					<input type="Email" name="message-email" required="" placeholder="Your Email" class="form-control"><br>
+
+					<textarea name="message" class="form-control" rows="6" placeholder="Message" required=""></textarea><br>
+					<center>
+						<button type="submit" class="btn btn-info">Submit</button>
+						
+				</center><br>	
+				</form>
+
+				</div>
+				<div class="col-md-1"></div>				
+				<div class="col-md-5"><br><br>
+				<p class="icn" style="color: white;"><i class="fa fa-map-marker"></i> &nbsp;&nbsp; B14 L10 Estrella Homes III, Gaya-Gaya, City of San Jose Del Monte Bulacan 3023</p>
+				<p class="icn" style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp; 09750024532/09651379844</p>
+				<p class="icn" style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp; jedar.scientificservices@gmail.com</p>
+				<div class="border-top border-white w-100 mx-auto my-3"></div>
+				<div class="media">
+					<ul class="social-footer" type="button">
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-facebook"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-whatsapp"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-viber"></i></li> 
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-google-plus-g"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-instagram"></i></li>
+					</ul>
+			</div>	
+			</div>
+
+
+			</div>
+					
+		</div>
+	</footer>
+
+	<!-- End Footer -->
+
+
+	<!-- Start Socket -->
+<div class="socket text-center py-3">
+<p>&copy; 2020 Jedar Scientific Instruments Services</p>
+
+</div>
+
+	<!-- End Socket --
+	<div class="space" style="height: 80vh;"></div>
+
+
+	<-- jQuery -->
+	<script src="{% static 'website/js/jquery-3.4.1.min.js'%}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{% static 'website/js/bootstrap.min.js'%}"></script>
+	<!-- Popper JS -->
+	<script src="{% static 'website/js/popper.min.js'%}"></script>
+	<!-- Font Awesome -->
+	<script src="{% static 'website/js/all.min.js'%}"></script>
+
+
+</body>
+</html>

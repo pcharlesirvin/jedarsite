@@ -1,0 +1,340 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JEDAR Scientific Instruments Services</title>
+
+	<link rel="shortcut icon" href=" {% static 'website/img/Logo2.png' %}">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+	<div id="navigation-sticky">
+
+		<!-- Navigation -->
+		<nav class="navbar bg-light navbar-light navbar-expand-lg sticky-top">
+			<div class="container">
+				<a href="index.html" class="navbar-brand"><img src="{% static 'website/img/Logo1.png '%}" alt="Logo" title="Logo">JEDAR</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#team" class="nav-link">Team</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#foot" class="nav-link">Contact Us</a></li>
+				</ul>
+			</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<div id="carousel" class="carousel slide" data-ride="carousel"
+			data-interval="5000">
+
+			<!-- Carousel Content -->
+			<div class="carousel-inner">
+
+				<div class="carousel-item active"><img src="{% static 'website/img/carousel/carousel1.jpg '%}" class="w-100" alt="">
+					<div class="carousel-caption">
+						<div class="container">
+							<div class="row justify-content-end">
+
+								<div class="d-none d-md-block col-md-11 col-lg-9 col-xl-8 bg-dark text-right">
+									<h3 class="pb-3">Jedar Scientific Instruments Services</h3>
+									<div class="border-top border-white pb-3 w-75 ml-auto"></div>
+								<p class="lead">Trusted by multiple Hospitals and Medical Laboratory across Metro Manila and 
+									surrounding areas.
+								</p>
+								<a href="#" class="btn btn-primary btn-md">Learn more...</a>
+								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item"><img src="{% static 'website/img/carousel/carousel2.jpg'%}" class="w-100" alt=""></div>
+				<div class="carousel-item"><img src="{% static 'website/img/carousel/carousel3.jpg'%}" class="w-100" alt=""></div>
+				
+			</div>
+			<!-- End Carousel Content -->
+
+			<!-- Carousel Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+
+			</ol>
+			<!-- End Carousel Indicators -->
+
+		</div>
+		<!-- End Image Carousel -->
+
+	<!-- End Navigation Sticky ID Section -->
+
+	<div id="social-media-sticky">
+
+		<!-- Start Social Jumbotron -->
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row justify-content-center text-center">
+
+				<div class="d-none d-xl-block col-xl-6 pt-1">
+					<h3>Connect with us on social media!</h3>
+				</div>
+
+				<div class="col-sm-10 col-md-8 col-lg-7 col-xl-6 pt-1">
+					<ul class="social" type="button">
+						<li><a href="https://www.youtube.com/watch?v=L-IQ1XEt-2Q">
+							<i class="fab fa-facebook" style="color: #3b5998"></i></li></a>
+						<li><a href="" target="_blank"></a>
+							<i class="fab fa-whatsapp-square" style="color: #25D366;"></i></li>
+						<li><a href="" target="_blank"></a>
+							<i class="fab fa-viber" style="color: #665CAC;"></i></li>
+						<li><a href="" target="_blank"></a>
+							<i class="fab fa-google-plus-g" style="color: #b33748;"></i></li>
+						<li><a href="" target="_blank"></a>
+							<i class="fab fa-instagram" style="color: #fd1D1D;"></i></li>
+						</ul>
+				</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Social Jumbotron -->
+
+
+		<!-- Main Page Heading -->
+		<div id="Services" class="col-12 text-center mt-5">
+			<h1 class="display-4 pt-4">Complete Service</h1>
+			<div class="border-top border-dark w-50 mx-auto my-3"></div>
+			<p class="lead">Included Calibration, Preventive Maintenance and Repair.</p>
+		</div>
+
+		<!-- Three Column Section --
+		<div class="container">
+			<div class="row justify-content-center my-5 text-center">
+
+			<div class="col-md-6 col-lg-4 py-3">
+			
+			</div>
+
+			</div>
+		</div>
+		<!-- End Three Column Section -->
+		
+  		<!-- border -->
+		  <div class="border-top border-dark w-100 mx-auto my-3"></div>
+		  
+
+		<!-- Start Two Column Section -->
+		<div class="container mt-4">
+			<h1 class="text-center mb-0">About Us</h1>
+			<div class="row py-1 justify-content-center my-1 text-center">
+				<div class="col-lg-5 mb-4 my-lg-auto">
+					<p class="mb-4">Jedar Scientific Instruments Services is a certified company trusted by multiple medical laboratories and hospitals across metro manila and surrounding areas. Dedicated to ensuring the accuracy and precision of its partner's medical instruments and machinery.</p>
+				</div>	
+				<div class="secondlogo">
+			<div class="col-lg-7"><img src="{% static 'website/img/Logo2.png'%}" alt="JEDAR-Scientific-Instruments-Services" class="w-100"></div>
+			</div></div>
+		</div>
+			<!-- End Two Column Section -->
+		 
+	</div> <!-- End Social Media Sticky -->
+
+
+	<!-- Start Fixed Background IMG -->
+	<div class="fixed-background">  
+		<div class="fixed-wrap">
+			<div class="fixed">
+			</div>
+		</div>
+	</div>
+	<!-- End Fixed Background IMG -->
+
+
+			<!-- Start Bundle Pack Jumbotron --
+			<div class="jumbotron fixed-top" style="margin-bottom: 2px;">
+				<div class="container">
+					<div class="row justify-content-center text-center">
+		
+						<div class="d-none d-md-block col-md-8 col-xl-7 my-auto">
+							<h4>Responsive bundle pack of complete websites!</h4>
+						</div>
+						
+						<div class="col-md-4 col-xl-3 pt-1 pt-md-2 pb-2">
+							<a href="https://w3newbie.com" target="_blank" class="btn btn-primary btn-md">Check out the websites</a>
+						</div>
+		
+					</div>
+				</div>
+			</div>
+			<!-- End Bundle Pack Jumbotron -->
+
+			<div  id="team" class="container">
+				<h1 class="text-center my-4">Our Team</h1>
+
+				<div class="row justify-content-center text-center">
+				<div class="col-md-6 col-lg-4 my-4">
+				<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+				<h4 class="my-33">Juvy Casidsid</h4>
+				<h6>CEO / Head Biomedical Engineer</h6>
+				</div>
+
+				<div class="col-md-6 col-lg-4 my-4">
+					<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+					<h4 class="my-33">Veronica Casidsid</h4>
+					<h6>Administrative Officer</h6>
+				</div>
+
+				<div class="col-md-6 col-lg-4 my-4">
+					<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+					<h4 class="my-33">Maureen Tadakuma</h4>
+					<h6>Service Coordinator</h6>
+				</div>
+
+				<div class="col-md-6 col-lg-4 my-4">
+					<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+					<h4 class="my-33">Dara Casidsid</h4>
+					<h6>Marketing Specialist</h6>
+				</div>
+
+				<div class="col-md-6 col-lg-4 my-4">
+					<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+					<h4 class="my-33">Louie Joy Mambusao</h4>
+					<h6>Service Engineer</h6>
+				</div>
+
+				<div class="col-md-6 col-lg-4 my-4">
+					<img src="{% static 'website/img/david.jpg'%}" class="w-100">
+					<h4 class="my-33">Charles Irvin Penalosa</h4>
+					<h6>Service Engineer</h6>
+				</div>
+			</div>
+
+			<div class="border-top border-dark w-100 mx-auto my-3"></div>
+		<!-- Three Column Section -->
+		</div>
+		</div>
+		<!-- End Three Column Section -->
+	
+		<!-- border -->
+	
+		 
+
+	<!-- End Text Button Sticky -->
+
+
+	<!-- Start Two Column Section -->
+
+	<!-- End Two Column Section -->
+
+
+	<!-- Start Website Designs Jumbotron --
+	<div class="jumbotron py-5 mb-0 fixed-bottom">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-7 col-lg-8 col-xl-9 my-auto">
+					<h4>Looking for quality, easy-to-use mobile-friendly website designs?</h4>
+				</div>
+				
+				<div class="col-md-5 col-lg-4 col-xl-3 pt-4 pt-md-0">
+					<a href="https://w3newbie.com" target="_blank" class="btn btn-primary btn-lg">Visit Us Today</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Start Footer -->
+	<footer class="bg-dark-footer" id="foot">
+		<div class="container">
+			<h1 class="text-center" style="color: white;"> Contact Us </h1>
+			<p style="text-align: center; color: whitesmoke;">Any Questions? Fill out this form to contact us and you’ll hear back within 24 hours.</p>
+			<div class="border-top border-white w-100 mx-auto my-3"></div>
+			<div class="row">
+				<div class="col-md-6">
+				<form action="{% url 'home' %}" method="POST"><br>
+					{% csrf_token %}
+					<input type="Text" name="message-name"	required="" placeholder="Your Name" class="form-control"><br>
+					<input type="Email" name="message-email" required="" placeholder="Your Email" class="form-control"><br>
+
+					<textarea name="message" class="form-control" rows="6" placeholder="Message" required=""></textarea><br>
+					<center>
+						<button type="submit" class="btn btn-info">Submit</button>
+						
+				</center><br>	
+				</form>
+
+				</div>
+				<div class="col-md-1"></div>				
+				<div class="col-md-5"><br><br>
+				<p class="icn" style="color: white;"><i class="fa fa-map-marker"></i> &nbsp;&nbsp; B14 L10 Estrella Homes III, Gaya-Gaya, City of San Jose Del Monte Bulacan 3023</p>
+				<p class="icn" style="color: white;"><i class="fa fa-phone"></i> &nbsp;&nbsp; 09750024532/09651379844</p>
+				<p class="icn" style="color: white;"><i class="fa fa-envelope"></i> &nbsp;&nbsp; jedar.scientificservices@gmail.com</p>
+				<div class="border-top border-white w-100 mx-auto my-3"></div>
+				<div class="media">
+					<ul class="social-footer" type="button">
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-facebook"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-whatsapp"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-viber"></i></li> 
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-google-plus-g"></i></li>
+					<li><a href="" target="_blank"></a>
+						<i class="fab fa-instagram"></i></li>
+					</ul>
+			</div>	
+			</div>
+
+
+			</div>
+					
+		</div>
+	</footer>
+
+	<!-- End Footer -->
+
+
+	<!-- Start Socket -->
+<div class="socket text-center py-3">
+<p>&copy; 2020 Jedar Scientific Instruments Services</p>
+
+</div>
+
+	<!-- End Socket --
+	<div class="space" style="height: 80vh;"></div>
+
+
+	<-- jQuery -->
+	<script src="{% static 'website/js/jquery-3.4.1.min.js'%}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{% static 'website/js/bootstrap.min.js'%}"></script>
+	<!-- Popper JS -->
+	<script src="{% static 'website/js/popper.min.js'%}"></script>
+	<!-- Font Awesome -->
+	<script src="{% static 'website/js/all.min.js'%}"></script>
+
+
+</body>
+</html>

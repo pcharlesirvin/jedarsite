@@ -1,0 +1,299 @@
+/*-- Reset --*/
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+  height: 2.8rem;
+}
+.navbar {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .4);
+}
+.nav-item {
+  padding: .4rem;
+}
+.nav-link {
+  color: black!important;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #396AFC!important;
+}
+
+/*============= CAROUSEL =============*/
+
+.carousel-inner {
+  max-height: 40rem!important;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 1.2s ease;
+}
+.carousel-indicators li {
+  width: 40px;
+  height: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+/*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%);
+    
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, .65)!important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+.carousel-caption h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+p.lead {
+  font-size: 1.4rem;
+}
+/*============= SOCIAL MEDIA STICKY BAR =============*/
+
+.jumbotron {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  padding: 1rem 0 .5rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+ul.social {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ol.social li {
+  margin: 0 auto;
+}
+.jumbotron .svg-inline--fa {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.jumbotron .svg-inline--fa:hover {
+  color: gray!important;
+}
+
+/*============= COLUMN CONTENT =============*/
+
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+}
+.fixed {
+  background-image: url('../img/MICROSCOPE.jpg');
+  position: fixed;
+}
+
+/*============= FOOTER =============*/
+.bg-dark-footer {
+  background-color: rgba(0, 0, 0, .65)!important;
+  padding: 1rem;
+}
+
+ul.social-footer {
+  list-style-type: none;
+  display: flex;
+ }
+
+ol.social-footer li {
+  color: #fff;
+  margin:0 0 10px 0;
+
+}
+
+.media .svg-inline--fa {
+  font-size: 2rem;
+  color: rgb(248, 241, 241);
+  margin-left: 1rem;
+  margin-right: 1rem;
+ 
+
+}
+.media .svg-inline--fa:hover {
+  color: gray!important;
+}
+
+.icn {
+  font-family: monospace;
+  font-size: 17px;
+}
+
+.btn-info {
+  width: 50%;
+  letter-spacing: 2px;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-info:hover {
+  transform: scale(1.05);
+}
+
+/*============= SOCKET =============*/
+
+.socket {
+  background-color: #222222;
+  border-top: .1rem solid gray;
+  font-size: .7rem;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: darkslategray;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+.carousel-caption h3 {
+font-size: 1.8rem;
+}
+}
+
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+  p.lead {
+  font-size: 1.2rem;
+}
+.carousel-indicators li {
+  width: 30px;
+  height: 4px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+}
+
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  p.lead {
+  font-size: 1.1rem;
+}
+.navbar-toggler {
+  transform: scale(.9);
+}
+.navbar {
+  font-size: 1rem;
+  padding: .4rem .6rem;
+}
+.jumbotron .svg-inline--fa {
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+
+.media .svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 0 0.8rem;
+}
+.icn {
+  font-size: 10px;
+}
+}
+
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+.navbar-toggler {
+  transform: scale(.7);
+}
+.navbar {
+  font-size: 1rem;
+  padding: .3rem .6rem;
+}
+.jumbotron .svg-inline--fa {
+  font-size: 1.8rem;
+  margin: 0 0.6rem;
+}
+
+.media .svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 0 .2rem;
+}
+.icn {
+  font-size: 10px;
+}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
