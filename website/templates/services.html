@@ -17,9 +17,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-	<div id="navigation-sticky">
-
-		<!-- Navigation -->
+			<!-- Navigation -->
 		<nav class="navbar bg-light navbar-light navbar-expand-lg sticky-top">
 			<div class="container">
 				<a href="index.html" class="navbar-brand"><img src="{% static 'website/img/Logo1.png '%}" alt="Logo" title="Logo">JEDAR</a>
@@ -32,9 +30,9 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="{% url 'services' %}" class="nav-link active">Services</a></li>
-					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Team</a></li>
-					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Contact Us</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#team" class="nav-link">Team</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#foot" class="nav-link">Contact Us</a></li>
 				</ul>
 			</div>
 

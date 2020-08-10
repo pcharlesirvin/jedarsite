@@ -17,8 +17,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-	<div id="navigation-sticky">
-
 		<!-- Navigation -->
 		<nav class="navbar bg-light navbar-light navbar-expand-lg sticky-top">
 			<div class="container">
@@ -32,7 +30,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
 					<li class="nav-item"><a href="{% url 'services' %}" class="nav-link">Services</a></li>
-					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#about" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="{% url 'home' %}#team" class="nav-link">Team</a></li>
 					<li class="nav-item"><a href="{% url 'home' %}#foot" class="nav-link">Contact Us</a></li>
 				</ul>
@@ -43,7 +41,7 @@
 		<!-- End Navigation -->
 
 		<div id="carousel" class="carousel slide" data-ride="carousel"
-			data-interval="5000">
+			data-interval="3500">
 
 			<!-- Carousel Content -->
 			<div class="carousel-inner">
@@ -120,6 +118,7 @@
 
 
 		<!-- Main Page Heading -->
+
 		<div id="Services" class="col-12 text-center mt-5">
 			<h1 class="display-4 pt-4">Complete Service</h1>
 			<div class="border-top border-dark w-50 mx-auto my-3"></div>
@@ -143,14 +142,14 @@
 		  
 
 		<!-- Start Two Column Section -->
-		<div class="container mt-4">
+		<div class="container" id="about">
 			<h1 class="text-center mb-0">About Us</h1>
-			<div class="row py-1 justify-content-center my-1 text-center">
+			<div class="row py-1 justify-content-center my-1 text-center mx-auto">
 				<div class="col-lg-5 mb-4 my-lg-auto">
-					<p class="mb-4">Jedar Scientific Instruments Services is a certified company trusted by multiple medical laboratories and hospitals across metro manila and surrounding areas. Dedicated to ensuring the accuracy and precision of its partner's medical instruments and machinery.</p>
+					<p class="mb-4 ">Jedar Scientific Instruments Services is a certified company trusted by multiple medical laboratories and hospitals across metro manila and surrounding areas. Dedicated to ensuring the accuracy and precision of its partner's medical instruments and machinery.</p>
 				</div>	
 				<div class="secondlogo">
-			<div class="col-lg-7"><img src="{% static 'website/img/Logo2.png'%}" alt="JEDAR-Scientific-Instruments-Services" class="w-100"></div>
+			<div class="col-lg-7 mx-auto"><img src="{% static 'website/img/Logo2.png'%}" alt="JEDAR-Scientific-Instruments-Services" class="w-100"></div>
 			</div></div>
 		</div>
 			<!-- End Two Column Section -->
