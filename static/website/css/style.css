@@ -10,7 +10,7 @@ html, body {
 /*============= NAVIGATION =============*/
 
 .navbar-brand img {
-  height: 2.8rem;
+  height: 2.5rem;
 }
 .navbar {
   background: linear-gradient(to right, #f2f2f2, #FBFBFB);
@@ -98,7 +98,9 @@ ol.social li {
 
 /*============= COLUMN CONTENT =============*/
 
-
+.secondlogo img:hover{
+  transform: scale(1.2);
+}
 
 /*===== FIXED BACKGROUND IMG =====*/
 
