@@ -6,6 +6,9 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: large;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /*============= NAVIGATION =============*/
 
@@ -33,7 +36,7 @@ html, body {
 /*============= CAROUSEL =============*/
 
 .carousel-inner {
-  max-height: 40rem !important;
+  max-height: 40rem!important;
 }
 
 /*---Change Carousel Transition Speed --*/
