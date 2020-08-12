@@ -33,7 +33,7 @@ html, body {
 /*============= CAROUSEL =============*/
 
 .carousel-inner {
-  max-height: 40rem!important;
+  max-height: 40rem !important;
 }
 
 /*---Change Carousel Transition Speed --*/
@@ -112,6 +112,29 @@ ol.social li {
   background-image: url('../img/MICROSCOPE.jpg');
   position: fixed;
 }
+
+/*============= OUR TEAM =============*/
+.teak {
+  margin: 75px 0;
+}
+
+.teak h1{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.teak h1:after  {
+  content: '';
+  background: #333;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+
 
 /*============= FOOTER =============*/
 .bg-dark-footer {
@@ -217,6 +240,10 @@ font-size: 1.8rem;
 }
 .icn {
   font-size: 10px;
+}
+
+.img-area{
+  display: :inline-block;
 }
 }
 
