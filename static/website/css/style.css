@@ -117,6 +117,80 @@ ol.social li {
   }
 }
 
+/*============= SERVICE SECTION =============*/
+.service-section {
+  background-color: #007bff;
+  margin-bottom: 50px 50px;
+  padding: 50px 50px;
+}
+
+.main {
+  width: 100%;
+  min-height: 380px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.service {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+}
+
+.service-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: #fff;
+  border: 15px solid #007bff;
+}
+
+.service-logo .svg-inline--fa{
+width: 2.5rem;
+height: 2.5rem;
+margin-top: 22px; 
+transition: transform 1.2s;
+}
+
+.service h4 {
+  height: 35px;
+  width: 100%;
+  background: #fff;
+  margin: 40px auto;
+  position: relative;
+  font-size: 22px;
+}
+
+.service h4::after {
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #fff, #007bff);
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: -1; 
+}
+
+.service h4::before {
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #007bff, #fff);
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1; 
+}
+.main:hover .svg-inline--fa{
+  transform: rotate(360deg);
+}
+
 /*============= COLUMN CONTENT =============*/
 
 .secondlogo img:hover{
