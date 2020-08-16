@@ -29,7 +29,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
-					<li class="nav-item"><a href="{% url 'services' %}" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="{% url 'home' %}#service" class="nav-link">Services</a></li>
 					<li class="nav-item"><a href="{% url 'home' %}#about" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="{% url 'home' %}#team" class="nav-link">Team</a></li>
 					<li class="nav-item"><a href="{% url 'home' %}#foot" class="nav-link">Contact Us</a></li>
@@ -108,11 +108,15 @@
 							<i class="fas fa-envelope-square" style="color: #b33748;"></i></li>
 						<li><a href="" target="_blank"></a>
 							<i class="fab fa-instagram" style="color: #fd1D1D;"></i></li>
+							<div id="service"> </div>
 						</ul>
+
 				</div>
 
 				</div>
+
 			</div>
+
 		</div>
 		<!-- End Social Jumbotron -->
 
@@ -120,10 +124,11 @@
 		<!-- Main Page Heading -->
 		<div class="service-section">
 		<div class="container">
+			<h1>OUR SERVICE</h1>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="main">
-						<div class="service">
+						<div class="service w-100 h-100">
 							<div class="service-logo">
 								<i class="fas fa-tools" style="color: #007bff"></i>
 							</div>
@@ -136,7 +141,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="main">
-						<div class="service">
+						<div class="service w-100 h-100">
 							<div class="service-logo">
 								<i class="fas fa-file-signature" style="color: #007bff"></i>
 							</div>
@@ -149,7 +154,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="main">
-						<div class="service">
+						<div class="service w-100 h-100">
 							<div class="service-logo">
 								<i class="fas fa-hand-holding-usd" style="color: #007bff"></i>
 							</div>
@@ -161,7 +166,9 @@
 					</div>					
 				</div>
 			</div>
+			<div id="about"></div>
 		</div>
+
 </div>
 		<!-- Three Column Section --
 		<div class="container">
@@ -176,11 +183,12 @@
 		<!-- End Three Column Section -->
 		
   		<!-- border -->
-		  <div class="border-top border-dark w-100 mx-auto my-3"></div>
+		  
 		  
 
 		<!-- Start Two Column Section -->
-		<div class="container" id="about">
+		<div class="about-section">
+		<div class="container">
 			<h1 class="text-center mb-0">About Us</h1>
 			<div class="row py-1 justify-content-center my-1 text-center mx-auto">
 				<div class="col-lg-5 mb-4 my-lg-auto">
@@ -189,6 +197,7 @@
 				<div class="secondlogo">
 			<div class="col-lg-7 mx-0"><img src="{% static 'website/img/Logo2.png'%}" alt="JEDAR-Scientific-Instruments-Services" class="w-100"></div>
 			</div></div>
+		</div>
 		</div>
 			<!-- End Two Column Section -->
 		 
@@ -202,6 +211,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="team"> </div>	
 	<!-- End Fixed Background IMG -->
 
 
@@ -222,7 +232,7 @@
 				</div>
 			</div>
 			<!-- End Bundle Pack Jumbotron -->
-			<section class="team" id="team">
+			<section class="team">
 				<div class="container">
 					<h1>OUR TEAM</h1>
 					<div class="row">

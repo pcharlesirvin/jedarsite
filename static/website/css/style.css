@@ -123,6 +123,22 @@ ol.social li {
   margin-bottom: 50px 50px;
   padding: 50px 50px;
 }
+.service-section h1{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.service-section h1:after  {
+  content: '';
+  background: #fff;
+  display: block;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
 
 .main {
   width: 100%;
@@ -130,6 +146,7 @@ ol.social li {
   text-align: center;
   position: relative;
   cursor: pointer;
+  margin-top: 25px;
 }
 .service {
   background: #fff;
@@ -175,6 +192,7 @@ transition: transform 1.2s;
   right: -5px;
   top: -5px;
   z-index: -1; 
+  margin-bottom: 2px;
 }
 
 .service h4::before {
@@ -191,8 +209,11 @@ transition: transform 1.2s;
   transform: rotate(360deg);
 }
 
-/*============= COLUMN CONTENT =============*/
-
+/*============= ABOUT SECTION =============*/
+.about-section {
+  margin-bottom: 50px 50px;
+  padding: 50px 50px;
+}
 .secondlogo img:hover{
   transform: scale(1.2);
   transition: all 0.5s ease-in-out 0s;
@@ -307,6 +328,7 @@ transition: transform 1.2s;
 .img-box:after, .img-box ul, .img-box ul li {
   transition: all 0.5s ease-in-out 0s;
 }
+
 /*============= FOOTER =============*/
 .bg-dark-footer {
   background-color: rgba(0, 0, 0, .65)!important;
