@@ -3,7 +3,7 @@ html, body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: large;
 }
 
@@ -11,25 +11,31 @@ html, body {
 /*============= NAVIGATION =============*/
 
 .navbar-brand img {
-  height: 2.5rem;
-}
+  height: 2rem;
+  }
+
 .navbar {
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(to right, #f2f2f2, #FBFBFB);
-  font-size: 1.1rem;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: .1rem;
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .4);
 }
 .nav-item {
-  padding: .4rem;
+  padding: .2rem;
 }
 .nav-link {
   color: black!important;
+  transition: all 300ms ease-in-out;
 }
 .nav-link.active,
 .nav-link:hover {
   color: #396AFC!important;
+  transition: all 300ms ease-in-out;
+
 }
+
 
 /*============= CAROUSEL =============*/
 
@@ -43,6 +49,7 @@ html, body {
 .carousel-item.active {
   transition: transform 1.2s ease;
 }
+
 .carousel-indicators li {
   width: 40px;
   height: 6px;
@@ -70,15 +77,29 @@ html, body {
 p.lead {
   font-size: 1.4rem;
 }
+
+/*============= HOME SECTION =============*/
+.home img{
+  width: 100%;
+}
+
+
 /*============= SOCIAL MEDIA STICKY BAR =============*/
 
 .jumbotron {
-  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  background: linear-gradient(to right, #e6e6e6, #FBFBFB);
   padding: 1rem 0 .5rem;
   margin-bottom: 0;
-  border-radius: 0;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
 }
+
+.jumbotron h3 {
+  padding-top: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: 'Open Sans',sans-serif;
+}
+
+
 ul.social {
   list-style-type: none;
   display: flex;
@@ -119,11 +140,11 @@ ol.social li {
 
 /*============= SERVICE SECTION =============*/
 .service-section {
-  background-color: #007bff;
+  background-color: #4da3ff;
   margin-bottom: 50px 50px;
-  padding: 50px 0;
+  padding: 2rem 8rem;
 }
-.service-section h1{
+.service-section h2{
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
@@ -131,7 +152,7 @@ ol.social li {
   padding-bottom: 60px;
 }
 
-.service-section h1:after  {
+.service-section h2:after  {
   content: '';
   background: #fff;
   display: block;
@@ -164,7 +185,7 @@ ol.social li {
   border-radius: 50%;
   margin: -90px auto 0;
   background: #fff;
-  border: 15px solid #007bff;
+  border: 15px solid #4da3ff;
 }
 
 .service-logo .svg-inline--fa{
@@ -175,19 +196,20 @@ transition: transform 1.2s;
 }
 
 .service h4 {
+  font-family: 'Open Sans', sans-serif;
   height: 35px;
   width: 100%;
   background: #fff;
   margin: 40px auto;
   position: relative;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .service h4::after {
   content: '';
   width: 40px;
   height: 30px;
-  background: linear-gradient(to right, #fff, #007bff);
+  background: linear-gradient(to right, #fff, #4da3ff);
   position: absolute;
   right: -5px;
   top: -5px;
@@ -199,7 +221,7 @@ transition: transform 1.2s;
   content: '';
   width: 40px;
   height: 30px;
-  background: linear-gradient(to right, #007bff, #fff);
+  background: linear-gradient(to right,#4da3ff, #fff);
   position: absolute;
   left: -5px;
   bottom: -5px;
@@ -208,6 +230,13 @@ transition: transform 1.2s;
 .main:hover .svg-inline--fa{
   transform: rotate(360deg);
 }
+
+.service p {
+  font-size: 16px;
+}
+
+/*============= what we do SECTION =============*/
+
 
 /*============= ABOUT SECTION =============*/
 .about-section {
@@ -220,7 +249,7 @@ transition: transform 1.2s;
 }
 
 
-.about-section h1{
+.about-section h2{
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
@@ -228,7 +257,7 @@ transition: transform 1.2s;
   padding-bottom: 60px;
 }
 
-.about-section h1:after  {
+.about-section h2:after  {
   content: '';
   background: #333;
   display: block;
